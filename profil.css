@@ -1,0 +1,229 @@
+/* Selector tag */
+
+body {
+    background-color: #f5f3ef;
+
+    background-image:
+        radial-gradient(circle at 15% 20%, #e8e4dc 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, #e5e1d8 0%, transparent 35%);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* Selector class: kartu profil */
+
+.kartu {
+    position: relative;
+
+    background-color: #fffdf9;
+
+    padding: 30px 40px;
+    margin: 20px;
+
+    border: 1px solid #ddd8ce;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(80, 75, 65, 0.10);
+
+    max-width: 360px;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* Garis aksen dekoratif di bagian atas kartu */
+
+.kartu::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background: linear-gradient(
+        90deg,
+        #8f9b82,
+        #b5b9a5,
+        #d2c8b8
+    );
+}
+
+
+/* Pita / badge kecil */
+
+.pita {
+    display: inline-block;
+
+    background-color: #eeece5;
+    color: #68705e;
+
+    font-size: 0.75em;
+    font-weight: bold;
+
+    padding: 4px 12px;
+
+    border-radius: 20px;
+
+    margin-top: 16px;
+    margin-bottom: 10px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Bingkai foto */
+
+.bingkai-foto {
+    width: 160px;
+    height: 160px;
+
+    margin: 0 auto 16px;
+    padding: 5px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #8f9b82,
+        #c5c5b5
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Selector class: foto */
+
+.foto {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #fffdf9;
+}
+
+
+/* Jabatan / subjudul */
+
+.jabatan {
+    color: #8a877e;
+
+    font-style: italic;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+
+    font-size: 0.9em;
+}
+
+
+/* Garis pembatas */
+
+.garis {
+    border: none;
+
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #d8d3c9,
+        transparent
+    );
+
+    margin: 16px 0;
+}
+
+
+/* Selector id: nama */
+
+#nama {
+    font-family: 'Georgia', serif;
+
+    color: #3f403b;
+
+    margin: 10px 0;
+
+    font-size: 1.8em;
+}
+
+
+/* Selector class: info */
+
+.info {
+    color: #68705e;
+
+    font-weight: bold;
+
+    margin: 4px 0;
+}
+
+
+/* Selector class: deskripsi */
+
+.deskripsi {
+    font-family: 'Verdana', sans-serif;
+
+    color: #66645f;
+
+    margin-top: 16px;
+
+    font-size: 0.95em;
+}
+
+
+/* Baris ikon sosial */
+
+.sosial {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 14px;
+}
+
+
+.ikon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: #eeece5;
+
+    border-radius: 50%;
+
+    font-size: 1em;
+
+    transition: transform 0.2s ease;
+}
+
+
+.ikon:hover {
+    transform: translateY(-3px);
+}
